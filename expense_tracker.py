@@ -12,8 +12,8 @@ class ExpenseTracker:
         self.kharch = []  # List to store expenses
 
     def kharch_add(self, date, rashi, category):
-        naya_kharch = Kharch(date, rashi,category)
-        self.kharch.append(naya_kharch)
+        new_kharch = Kharch(date, rashi,category)
+        self.kharch.append(new_kharch)
         print(f"Kharch add: {date} - ₹{rashi:.2f} ({category})")
 
     def kharch_view(self):
